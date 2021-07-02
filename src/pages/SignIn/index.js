@@ -1,17 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import { Title1, Title2, Button } from '../../components';
+import { Title1, Title2, FormSingin } from '../../components';
+import {Container, Text, Login, Logo} from './styles'
+import img from '../../assets/imagen'
 
 const SignIn =() =>{
   return(<>
-    <Title1>A rede dos programadores</Title1>
-    <Title2>Venha compartilhar conhecimento, código e café</Title2>
-    <Link to="/dashboard">
-    <Button>Entrar</Button>
-
-    </Link>
-    <Button>Criar Conta</Button>
+    <Logo>
+      <img src={img.LogoGroup} alt="Logo HackZone" />
+    </Logo>
+    <Container>
+      <Text>
+        <Title1>A rede dos programadores</Title1>
+        <Title2>Venha compartilhar conhecimento, código e café</Title2>
+      </Text>
+      <Login>
+        <FormSingin></FormSingin>
+      </Login>
+    </Container>
+    
 
   </>)
 }

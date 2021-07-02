@@ -3,8 +3,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import Routes from './routes';
 
-
-import history from './services/history';
 import {theme} from './styles/theme';
 
 import GlobalStyle from './styles/global';

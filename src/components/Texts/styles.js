@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Title1 = styled.h1`
   font-size: 5.063rem;
+  color: ${({theme})=> theme.blue}
 `;
 
 export const Title2 = styled.h2`
